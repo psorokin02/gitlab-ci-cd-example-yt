@@ -12,7 +12,7 @@ docker run -d --name gitlab-runner --restart always \
 ### Регистрация раннера
 Выполняем внутри контейнера с запущенным раннером команду регистрации раннера
 ```
-docker exec -it gitlab-runner /bin/sh gitlab-runner register
+docker exec -it gitlab-runner gitlab-runner register
 ```
 
 Указываем параметры раннера
@@ -22,7 +22,6 @@ Enter the registration token: ВАШ токен
 Enter an executor: docker
 Enter the default Docker image (for example, ruby:2.7): docker:dind
 ```
-
 
 ### Изменение конфига 
 Заходим в режим редактирования конфига
@@ -34,8 +33,9 @@ nano /srv/gitlab-runner/config/config.toml
 ```
 volumes = ["/cache"]
 ```
-Меняем строчку на новую.
+Удаляем строчку и меняем строчку на новую.
 Это позволит раннеру джобам запускать контейнеры в docker
 ```
 volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
+network_mode = "host"
 ```
