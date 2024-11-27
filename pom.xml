@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.sorokin</groupId>
-    <artifactId>gitlab-cicd-yt-example</artifactId>
+    <artifactId>gitlab-cicd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gitlab-cicd-yt-example</name>
-    <description>gitlab-cicd-yt-example</description>
+    <name>gitlab-cicd</name>
+    <description>gitlab-cicd</description>
     <url/>
     <licenses>
         <license/>

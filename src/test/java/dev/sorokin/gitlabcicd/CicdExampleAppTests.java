@@ -1,10 +1,10 @@
-package dev.sorokin.gitlabcicdytexample;
+package dev.sorokin.gitlabcicd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GitlabCicdYtExampleApplicationTests {
+class CicdExampleAppTests {
 
     @Test
     void contextLoads() {

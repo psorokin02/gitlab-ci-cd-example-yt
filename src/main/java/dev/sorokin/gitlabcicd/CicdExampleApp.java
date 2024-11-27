@@ -1,13 +1,13 @@
-package dev.sorokin.gitlabcicdytexample;
+package dev.sorokin.gitlabcicd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GitlabCicdYtExampleApplication {
+public class CicdExampleApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(GitlabCicdYtExampleApplication.class, args);
+        SpringApplication.run(CicdExampleApp.class, args);
     }
 
 }
