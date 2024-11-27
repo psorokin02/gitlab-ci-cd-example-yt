@@ -1,8 +1,8 @@
 version: '3'
 services:
   cicd-example:
-    image: hello-backend:latest
-    container_name: hello-backend
+    image: my-backend:latest
+    container_name: my-backend
     ports:
       - "8080:8080"
     restart: always

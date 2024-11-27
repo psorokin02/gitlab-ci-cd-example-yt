@@ -15,8 +15,7 @@ public class UserController {
     public ResponseEntity<List<User>> getUsers() {
         var userList = List.of(
                 new User("Artem", 20),
-                new User("Kirill", 20),
-                new User("Pasha", 20)
+                new User("Kirill", 20)
                 );
         return ResponseEntity.ok(userList);
     }
