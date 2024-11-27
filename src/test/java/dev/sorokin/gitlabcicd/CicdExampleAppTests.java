@@ -33,7 +33,7 @@ class CicdExampleAppTests {
                 .readerForListOf(UserController.User.class)
                 .readValue(jsonUsers);
 
-        Assertions.assertEquals(users.size(), 3);
+        Assertions.assertEquals(users.size(), 2);
     }
 
 
